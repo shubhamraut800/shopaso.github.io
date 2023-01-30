@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>dukandar</title>
+</head>
+<style>
+    nav{
+    display: flex;
+    background-color: rgb(201, 218, 245);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 60px;
+    gap: 35px;
+    width: 100%;
+}
+img{
+    mix-blend-mode: multiply;
+}
+body{
+    margin: 0;
+}
+img{
+    height: 40px;
+    width: 40px;
+
+}
+#home{
+    margin-left: 8px;
+}
+#form{
+    height: 300px;
+    width: 350px;
+    margin-top: 15%;
+    margin-left: 7.5%;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form{
+    margin-left: 15%;
+    padding-top: 15%;
+
+}
+#lebel2{
+    margin-right: 13.7%;
+    padding-bottom: 2%;
+}
+#lebel1{
+    margin-right: 14%;
+    padding-bottom: 2%;
+}
+#lebel3{
+    margin-right: 5.4%;
+}
+.navi{
+    margin-top: 6px;
+}
+.input{
+    margin-bottom: 5%
+}
+
+</style>
+<body>
+    <nav>
+        <div class="navi" id="home">
+            <img src="images/navimghome22.jpg" class="img"alt="">
+            <!-- <p id="homep">home</p> -->
+        </div>        
+        <div class="navi" id="search">
+            <img src="images/searchimg.jpg" alt="">
+            <!-- <p>search</p> -->
+        </div>
+        <div class="navi" id="cart">
+            <a href="about.html"><img src="images/cartimg.jpg" alt="" ></a>
+            <!-- <p>cart</p> -->
+        </div>
+        <div class="navi" id="setting">
+            <img src="images/settingimg.jpg" alt="">
+            <!-- <p>setting</p> -->
+        </div>
+        <div class="navi" id="account">
+            <img src="images/accountimg.jpg" alt="">
+            <!-- <p>account</p> -->
+        </div>        
+    </nav>
+    <div id="form">
+        <form action="https://api.sheetmonkey.io/form/c3G1Mz5v4VZwF2VGQAzqAe" method="post">
+            <div class="input" id="input1">
+                <label for="" id="lebel1">name:</label>
+                <input type="text" name="name"id="inputt1">
+            </div>
+            <div class="input">
+                <label for="" id="lebel2">email:</label>
+                <input type="text" id="inputt2" name="email">
+            </div>
+            <div class="input">
+                <label for="" id="lebel3">password:</label>
+                <input type="text" id="inputt3" name="password">
+            </div>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
